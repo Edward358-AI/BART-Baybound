@@ -1,0 +1,28 @@
+{
+  "name": "@baybound/bart-math",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pure transit logic shared by backend, web, and mobile: fares, trip planning, train sync",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@baybound/bart-data": "workspace:*"
+  },
+  "devDependencies": {
+    "@baybound/bart-config": "workspace:*",
+    "@types/node": "^20.14.0",
+    "eslint": "^9.9.0",
+    "typescript": "^5.5.0",
+    "vitest": "^3.0.0"
+  }
+}

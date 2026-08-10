@@ -1,0 +1,4 @@
+{
+  "extends": "@baybound/bart-config/tsconfig.base.json",
+  "include": ["src", "tsup.config.ts"]
+}

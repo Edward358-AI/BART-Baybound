@@ -1,0 +1,20 @@
+{
+  "name": "@baybound/bart-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared TypeScript, ESLint, and Prettier configuration",
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./eslint": "./eslint.config.mjs",
+    "./prettier": "./prettier.config.mjs"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

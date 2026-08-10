@@ -1,0 +1,25 @@
+{
+  "name": "@baybound/bart-data",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static BART system data (stations, lines, timetable, fares) generated from GTFS",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@baybound/bart-config": "workspace:*",
+    "@types/node": "^20.14.0",
+    "eslint": "^9.9.0",
+    "typescript": "^5.5.0",
+    "vitest": "^3.0.0"
+  }
+}

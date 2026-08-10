@@ -1,0 +1,30 @@
+{
+  "name": "@baybound/backend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Baybound API server: BART polling engine, realtime fan-out, sync sessions",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@baybound/bart-data": "workspace:*",
+    "@baybound/bart-math": "workspace:*",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@baybound/bart-config": "workspace:*",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.14.0",
+    "eslint": "^9.9.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "vitest": "^3.0.0"
+  }
+}
