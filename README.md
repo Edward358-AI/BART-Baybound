@@ -27,7 +27,7 @@ clients share a single implementation.
 
 ## Prerequisites
 
-- Node.js 20+
+- Node.js 24+
 - pnpm 10 (`corepack enable` or `npm install -g pnpm`)
 - Docker (local Postgres + Redis)
 
